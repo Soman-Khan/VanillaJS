@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>nextElementSibling();</title>
+    <style media="screen">
+        nav{
+            padding: 15px;
+            background: red;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>Nagigation</nav>
+    <h1>DOM-nextElementSibling() Property</h1>
+     <ul id="myList">
+         <li>Apples</li>
+         <li>Bananas</li>
+         <li>Oranges</li>
+         <li>Pears</li>
+     </ul>
+     <ul id="myList">
+         <li>Apples</li>
+         <li>Bananas</li>
+         <li>Oranges</li>
+         <li>Pears</li>
+     </ul>
+     <ul id="myList">
+         <li>Apples</li>
+         <li>Bananas</li>
+         <li>Oranges</li>
+         <li>Pears</li>
+     </ul>
+     <ul id="myList">
+         <li>Apples</li>
+         <li>Bananas</li>
+         <li>Oranges</li>
+         <li>Pears</li>
+     </ul>
+     <ul id="myList">
+         <li>Apples</li>
+         <li>Bananas</li>
+         <li>Oranges</li>
+         <li>Pears</li>
+     </ul>
+     <ul id="myList">
+         <li>Apples</li>
+         <li>Bananas</li>
+         <li>Oranges</li>
+         <li>Pears</li>
+     </ul>
+     <ul id="myList">
+         <li>Apples</li>
+         <li>Bananas</li>
+         <li>Oranges</li>
+         <li>Pears</li>
+     </ul>
+     <ul id="myList">
+         <li>Apples</li>
+         <li>Bananas</li>
+         <li>Oranges</li>
+         <li>Pears</li>
+     </ul>
+</body>
+
+<script type="text/javascript">
+    var nav = document.querySelector('nav');
+    var belowNav = nav.nextElementSibling;
+
+    //console.log(belowNav);
+
+    belowNav.style.marginTop = nav.clientHeight + 'px';
+</script>
+</html>
